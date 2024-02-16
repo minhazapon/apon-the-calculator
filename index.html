@@ -14,13 +14,13 @@
 
 
 </head>
-<body class="">
+<body class="flex-col md:flex-row lg:flex-row">
     
 
 
     <header>
 
-           <div class="flex-col md:flex-row lg:flex-row">
+           <div class="">
               
             <div class="navbar bg-base-100 ">
                 <div class="navbar-start">
@@ -36,9 +36,9 @@
                   </div>
                 </div>
 
-                  <img class="h-[40px] w-[50px]" src="images/calculator.png" alt="">
+                  <img class="h-[30px] w-[30px]" src="images/calculator.png" alt="">
                 <div class="navbar-center">
-                  <a class="btn btn-ghost text-4xl font-bold ">Apon <span class="text-pink-600">The</span> <span class="text-4xl text-yellow-400">calculator</span></a>
+                  <a class="btn btn-ghost text-3xl font-bold flex-col md:flex-row lg:flex-row ">Apon <span class="text-pink-600"></span> <span class="text-3xl text-yellow-400">calculator</span></a>
                 </div>
                 <div class="navbar-end">
                   <button class="btn btn-ghost btn-circle">
@@ -73,15 +73,15 @@
         <section>
 
            
-          <div class="flex gap-2">
+          <div class="flex gap-2 items-center flex-col md:flex-row lg:flex-row">
 
 
 
            <div>
               
-            <div class="flex gap-3">
+            <div class="flex gap-3 items-center flex-col md:flex-row lg:flex-row">
                 
-                <div class="card w-[300px] h-[400px] bg-base-100 shadow-xl">
+                <div class="card w-[300px] h-[400px] bg-base-100 shadow-xl items-center flex-col md:flex-row lg:flex-row">
                     <figure class="px-10 pt-10">
                       <img class="h-[100px] w-[100px]" src="images/triangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
@@ -102,63 +102,63 @@
                        </div>
 
                       <div class="card-actions">
-                        <button class="btn btn-primary">Calculate</button>
+                        <button onclick="triangle()" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                   </div>
 
+                 <!-- 2nd -->
 
-
-                  <div class="card w-[300px] h-[400px] bg-base-100 shadow-xl">
+                  <div class="card w-[300px] h-[400px] bg-base-100 shadow-xl  flex-col md:flex-row lg:flex-row">
                     <figure class="px-10 pt-10">
                       <img class="h-[100px] w-[100px]" src="images/ellipse.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">triangel</h2>
+                      <h2 class="card-title">ellipse</h2>
                       <p>Area (A) = 0.5 x A X B</p>
                        
                       <div class="flex gap-3 "> 
-                        <input id="triangelbase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                        <input id="ellipselbase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
                         <span>cm</span>
-                        <input id="triangelheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
+                        <input id="ellipseheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
                         <span>cm</span>
                        </div>
                        <div>
      
-                         <p class="text-2xl">Area: <span id="triangelarea"></span>   <span>cm<sup>2</sup></span></p>
+                         <p class="text-2xl">Area: <span id="ellipsearea"></span>   <span>cm<sup>2</sup></span></p>
      
                        </div>
 
                       <div class="card-actions">
-                        <button class="btn btn-primary">Calculate</button>
+                        <button onclick="ellipse()" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                   </div>
 
+                 <!-- 3rd -->
 
-
-                  <div class="card w-[300px] h-[400px] bg-base-100 shadow-xl">
+                  <div class="card w-[300px] h-[400px] bg-base-100 shadow-xl flex-col md:flex-row lg:flex-row">
                     <figure class="px-10 pt-10">
-                      <img class="h-[100px] w-[100px]" src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                      <img class="h-[100px] w-[200px]" src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">triangel</h2>
+                      <h2 class="card-title">parallelogram</h2>
                       <p>Area (A) = 0.5 x A X B</p>
                        
                       <div class="flex gap-3 "> 
-                        <input id="triangelbase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                        <input id="parabase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
                         <span>cm</span>
-                        <input id="triangelheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
+                        <input id="paraheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
                         <span>cm</span>
                        </div>
                        <div>
      
-                         <p class="text-2xl">Area: <span id="triangelarea"></span>   <span>cm<sup>2</sup></span></p>
+                         <p class="text-2xl">Area: <span id="paraarea"></span>   <span>cm<sup>2</sup></span></p>
      
                        </div>
 
                       <div class="card-actions">
-                        <button class="btn btn-primary">Calculate</button>
+                        <button onclick="para()" class="btn btn-primary">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -169,88 +169,88 @@
            </div>
 
              
-           
+           <!-- 4th -->
 
-           <div class="flex mt-5 gap-3">
+           <div class="flex mt-5 gap-3 flex-col md:flex-row lg:flex-row">
                 
             <div class="card w-[300px] h-[400px] bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img class="h-[100px] w-[100px]" src="images/pentagon.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">triangel</h2>
+                  <h2 class="card-title">pentagon</h2>
                   <p>Area (A) = 0.5 x A X B</p>
                    
                   <div class="flex gap-3 "> 
-                    <input id="triangelbase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                    <input id="penbase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
                     <span>cm</span>
-                    <input id="triangelheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
+                    <input id="penheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
                     <span>cm</span>
                    </div>
                    <div>
  
-                     <p class="text-2xl">Area: <span id="triangelarea"></span>   <span>cm<sup>2</sup></span></p>
+                     <p class="text-2xl">Area: <span id="penarea"></span>   <span>cm<sup>2</sup></span></p>
  
                    </div>
 
                   <div class="card-actions">
-                    <button class="btn btn-primary">Calculate</button>
+                    <button onclick="pentagon()" class="btn btn-primary">Calculate</button>
                   </div>
                 </div>
               </div>
 
-
-
+            <!-- five -->
+           
               <div class="card w-[300px] h-[400px] bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                   <img class="h-[100px] w-[100px]" src="images/rectangle.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">triangel</h2>
+                  <h2 class="card-title">rectangel</h2>
                   <p>Area (A) = 0.5 x A X B</p>
                    
                   <div class="flex gap-3 "> 
-                    <input id="triangelbase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                    <input id="recbase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
                     <span>cm</span>
-                    <input id="triangelheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
+                    <input id="recheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
                     <span>cm</span>
                    </div>
                    <div>
  
-                     <p class="text-2xl">Area: <span id="triangelarea"></span>   <span>cm<sup>2</sup></span></p>
+                     <p class="text-2xl">Area: <span id="recarea"></span>   <span>cm<sup>2</sup></span></p>
  
                    </div>
 
                   <div class="card-actions">
-                    <button class="btn btn-primary">Calculate</button>
+                    <button onclick="rectangel()" class="btn btn-primary">Calculate</button>
                   </div>
                 </div>
               </div>
 
-
+           <!-- six -->
 
               <div class="card w-[300px] h-[400px] bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
-                  <img class="h-[100px] w-[100px]" src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
+                  <img class="h-[100px] w-[180px]" src="images/rhombus.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <h2 class="card-title">triangel</h2>
+                  <h2 class="card-title">rhombus</h2>
                   <p>Area (A) = 0.5 x A X B</p>
                    
                   <div class="flex gap-3 "> 
-                    <input id="triangelbase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
+                    <input id="rhobase" type="text" placeholder="A" class="w-[50px] border-[1px] border-[blue] p-1 ">
                     <span>cm</span>
-                    <input id="triangelheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
+                    <input id="rhoheight" type="text" placeholder="B" class="w-[50px]  border-[1px] border-[blue] p-1">
                     <span>cm</span>
                    </div>
                    <div>
  
-                     <p class="text-2xl">Area: <span id="triangelarea"></span>   <span>cm<sup>2</sup></span></p>
+                     <p class="text-2xl">Area: <span id="rhoarea"></span>   <span>cm<sup>2</sup></span></p>
  
                    </div>
 
                   <div class="card-actions">
-                    <button class="btn btn-primary ">Calculate</button>
+                    <button onclick="rhombus()" class="btn btn-primary ">Calculate</button>
                   </div>
                 </div>
               </div>
@@ -267,9 +267,9 @@
           
 
         
-           <div>
+           <div class="flex-col md:flex-row lg:flex-row">
 
-            <h1 class="text-2xl border-2 w-80 h-[820px] rounded-xl text-center border-yellow-400">
+            <h1 class="text-2xl border-2 w-80 h-[820px] rounded-xl text-center border-yellow-400 flex-col md:flex-row lg:flex-row">
                
                Area Calculation</h1>
 
@@ -328,7 +328,16 @@
 
 
 
+  <script src="triangel.js"></script>
 
+  <script src="ellipse.js"></script>
 
+  <script src="parallelogram.js"></script>
+
+  <script src="pentagon.js"></script>
+
+  <script src="rectangel.js"></script>
+
+  <script src="rhombus.js"></script>
 </body>
 </html>
